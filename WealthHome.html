@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wealth Home Website</title>
+
+    <link rel="stylesheet" href="WealthHome.css" />
+
+    <!-- Font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0
+      ,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <h2><i class="fa fa-home"></i> WealthHome</h2>
+        </a>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a href="#" class="navbar-link">Home</a></li>
+            <li><a href="#" class="navbar-link">Rent</a></li>
+            <li><a href="#" class="navbar-link">Sell</a></li>
+            <li><a href="#" class="navbar-link">Buy</a></li>
+            <li><a href="#" class="navbar-link">About</a></li>
+          </ul>
+
+          <div class="navbar-wrapper">
+            <a href="login.html" class="btn-link">Login</a>
+            <a href="RegistrationForm.html" class="btn btn-fill">Get Started</a>
+          </div>
+        </nav>
+
+        <button class="nav-toggle-btn icon-btn">
+          <i class="fa fa-bars matarial-symbol-rounded open" aria-hidden="true"></i>
+          <i class="fa fa-remove matarial-symbol-rounded close" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main section start -->
+    <main>
+      <article>
+        <!-- hero  section start -->
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="hero-title">Find a place where you can be yourself</h1>
+
+              <p class="hero-text">
+                If you're looking for a place where you can be yourself, Don't
+                give up. Keep searching untill you find a place that feels like
+                home.
+              </p>
+
+              <form action="./" class="search-bar">
+                <label class="search-item">
+                  <span class="label">Want to</span>
+
+                  <select name="want-to" class="search-item-field">
+                    <option value="buy" selected>Buy</option>
+                    <option value="sell" selected>Sell</option>
+                    <option value="rent" selected>Rent</option>
+                  </select>
+
+                  <span class="hero-icon"><i class="fa fa-home"></i></span>
+                </label>
+
+                <label class="search-item">
+                  <span class="label">Property-type</span>
+
+                  <select name="property-type" class="search-item-field">
+                    <option value="any" selected>Any</option>
+                    <option value="houses" selected>Houses</option>
+                    <option value="apartments" selected>Apartments</option>
+                    <option value="villa" selected>Villa</option>
+                    <option value="townhome" selected>Townhome</option>
+                    <option value="bungalow" selected>Bungalow</option>
+                    <option value="loft" selected>Loft</option>
+                  </select>
+
+                  <span class="hero-icon"><i class="fa fa-building"></i> </span>
+                </label>
+
+                <label class="search-item">
+                  <span class="label">Locaton</span>
+
+                  <input
+                    type="text"
+                    name="locaton"
+                    placeholder="Street,City,Zip..."
+                    class="search-item-field"
+                  />
+
+                  <span class="hero-icon"
+                    ><i class="fa fa-map-marker"></i
+                  ></span>
+                </label>
+
+                <button type="submit" class="search-btn">
+                  <span><i class="fa fa-search"></i> Search </span>
+                </button>
+              </form>
+            </div>
+            <!-- /*image/Wealth-home Images/home- background website.jpg*/ -->
+            <img src="images/home- background website.jpg" width="816" height="759" role="presentation" class="hero-banner"
+            />
+          </div>
+        </section>
+
+        <!-- Property section start -->
+        <section class="section property">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <h2 class="section-title" style="color: black; font-size: 3rem; line-height: 1.4"> Best home in your city</h2>
+                <p class="section-text" style="font-size: 1.6rem; line-height: 1.4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
+                  incidunt suscipit dolores quod, magnam vero laborios place.
+                </p>
+              </div>
+
+              <a href="#" class="btn btn-fill">
+                <span>Explore more<i class="fa fa-expandfa fa-angle-double-right"></i></span>
+              </a>
+            </div>
+
+            <div class="property-list">
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder"style="--width: 585; --height: 390">
+                    <img
+                      src="images/property-1 House.jpg"
+                      width="585" height="390"class="img-cover"/>
+                  </figure>
+
+                  <span class="badge">New</span>
+
+                  <button class="icon-btn fav-btn">
+                    <span class="favorite"><i class="fa fa-heart-o"></i></span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="card-price">$710.68</span>
+
+                  <h3><a href="#" class="card-title">Ahuja House</a></h3>
+
+                  <address class="card-text">1828 Ganganager, India 335033</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bed"></i> 3 Bed
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bath"></i> 2 Bath
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-area-chart"></i>
+                        1430 sqft
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder"style="--width: 585; --height: 390">
+                    <img src="images/property-2 house.png "width="585"height="390"class="img-cover"/>
+                  </figure>
+
+                  <button class="icon-btn fav-btn">
+                    <span class="favorite"><i class="fa fa-heart-o"></i></span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="card-price">$660.65</span>
+
+                  <h3><a href="#" class="card-title">Exit Realty</a></h3>
+
+                  <address class="card-text">2901 Mumbai, India 339841</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bed"></i> 4 Bed
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bath"></i> 2 Bath
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-area-chart"></i>
+                        1130 sqft
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder" style="--width: 585; --height: 390">
+                    <img src="images/property-3 house.png" width="585"height="390"class="img-cover"/>
+                  </figure>
+
+                  <button class="icon-btn fav-btn">
+                    <span class="favorite"><i class="fa fa-heart-o"></i></span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="card-price">$960.25</span>
+
+                  <h3><a href="#" class="card-title">The Real Estate Group</a></h3>
+
+                  <address class="card-text">1201 jaipur, India 332141</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bed"></i> 5 Bed
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bath"></i> 3 Bath
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-area-chart"></i>
+                        1830 sqft
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure
+                    class="img-holder"
+                    style="--width: 585; --height: 390"
+                  >
+                    <img
+                      src="images/property-4 house.jpg"
+                      width="585"
+                      height="390"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="icon-btn fav-btn">
+                    <span class="favorite"><i class="fa fa-heart-o"></i></span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="card-price">$990.25</span>
+
+                  <h3>
+                    <a href="#" class="card-title">The Royal House</a>
+                  </h3>
+
+                  <address class="card-text">
+                    1101 Ganganager, India 335073
+                  </address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bed"></i> 3 Bed
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bath"></i> 3 Bath
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-area-chart"></i>
+                        1230 sqft
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder" style="--width: 585; --height: 390" >
+                    <img src="images/property-5house.jpg" width="585" height="390"class="img-cover" />
+                  </figure>
+
+                  <button class="icon-btn fav-btn">
+                    <span class="favorite"><i class="fa fa-heart-o"></i></span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="card-price">$720.25</span>
+
+                  <h3><a href="#" class="card-title">Sunshine House</a></h3>
+
+                  <address class="card-text">1067 jodhpur, India 335087</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bed"></i> 4 Bed
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bath"></i> 3 Bath
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-area-chart"></i>
+                        1530 sqft
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder"style="--width: 585; --height: 390" ->
+                    <img src="images/property-6 house.png" width="585" height="390"class="img-cover"/>
+                  </figure>
+
+                  <button class="icon-btn fav-btn">
+                    <span class="favorite"><i class="fa fa-heart-o"></i></span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="card-price">$658.25</span>
+
+                  <h3><a href="#" class="card-title">Rose Villa</a></h3>
+
+                  <address class="card-text">1378 Kolkata, India 332553</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bed"></i> 3 Bed
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bath"></i> 2 Bath
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-area-chart"></i>
+                        1430 sqft
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder" style="--width: 585; --height: 390">
+                    <img src="images/property-3 house.webp" width="585" height="390" class="img-cover"/>
+                  </figure>
+
+                  <button class="icon-btn fav-btn">
+                    <span class="favorite"><i class="fa fa-heart-o"></i></span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="card-price">$960.25</span>
+
+                  <h3><a href="#" class="card-title">Sierra Sky</a></h3>
+
+                  <address class="card-text">2938 Chandigarh, India 335154</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bed"></i> 4 Bed
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bath"></i> 3 Bath
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-area-chart"></i>
+                        1230 sqft
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-banner">
+                  <figure class="img-holder" style="--width: 585; --height: 390">
+                    <img src="images/property-8 house.jpg" width="585" height="390" class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="icon-btn fav-btn">
+                    <span class="favorite"><i class="fa fa-heart-o"></i></span>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  <span class="card-price">$1960.25</span>
+
+                  <h3><a href="#" class="card-title">Dolce Vita Villa.</a></h3>
+
+                  <address class="card-text">1238 Ganganager, India 335001</address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bed"></i> 7 Bed
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-bath"></i> 5 Bath
+                      </span>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="hero-icon meta-icon">
+                        <i class="fa fa-area-chart"></i>
+                        1530 sqft
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Feature Section start  -->
+        <section class="section feature">
+          <div class="container">
+            <figure class="feature-banner">
+              <img src="images/Feature banner-1.jpg" width="1020" height="690" loading="lazy" class="img-cover"/>
+            </figure>
+
+            <div class="feature-content">
+              <h2 id="feature-label" class="feature-heading" style="color: black">
+                We specialize In Quality Home Renovations
+              </h2>
+
+              <p class="feature-label feature-text">
+                Looking to renovate your home to reflect your style and
+                personality? Look no further than our team of experts who
+                specialize In quality home renovations to transfer your space
+                into a dream home you'll love. From design to execution.
+              </p>
+
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="matarial-symbol-rounded feature-icon"
+                    ><i class="fa fa-check-circle"></i>
+                  </span>
+                  <span class="body-medium">Smart House</span>
+                </li>
+
+                <li class="feature-item">
+                  <span class="matarial-symbol-rounded feature-icon"
+                    ><i class="fa fa-check-circle"></i
+                  ></span>
+                  <span class="body-medium">Beautiful Scene Around</span>
+                </li>
+
+                <li class="feature-item">
+                  <span class="matarial-symbol-rounded feature-icon"
+                    ><i class="fa fa-check-circle"></i
+                  ></span>
+                  <span class="body-medium">Exceptional lifestyle</span>
+                </li>
+
+                <li class="feature-item">
+                  <span class="matarial-symbol-rounded feature-icon"
+                    ><i class="fa fa-check-circle"></i
+                  ></span>
+                  <span class="body-medium">Complete 24/7 Security</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section feature feature-2">
+          <div class="container">
+            <figure class="feature-banner">
+              <img src="images/Feature banner-2.jpg" width="1020" height="690" loading="lazy" class="img-cover" />
+            </figure>
+
+            <div class="feature-content">
+              <h2 id="feature-label" class="feature-heading" style="color: black">
+                We Are Experts In Historic Home Renovations
+              </h2>
+
+              <p class="feature-label-2 feature-text">
+                Looking to renovate your home to reflect your style and
+                personality? Look no further than our team of experts who
+                specialize In quality home renovations to transfer your space
+                into a dream home you'll love. From design to execution.
+              </p>
+
+              <ul class="feature-list">
+                <li class="feature-item">
+                  <span class="matarial-symbol-rounded feature-icon"
+                    ><i class="fa fa-check-circle"></i
+                  ></span>
+                  <span class="body-medium">Smart House</span>
+                </li>
+
+                <li class="feature-item">
+                  <span class="matarial-symbol-rounded feature-icon"
+                    ><i class="fa fa-check-circle"></i
+                  ></span>
+                  <span class="body-medium">Beautiful Scene Around</span>
+                </li>
+
+                <li class="feature-item">
+                  <span class="matarial-symbol-rounded feature-icon"
+                    ><i class="fa fa-check-circle"></i
+                  ></span>
+                  <span class="body-medium">Exceptional lifestyle</span>
+                </li>
+
+                <li class="feature-item">
+                  <span class="matarial-symbol-rounded feature-icon"
+                    ><i class="fa fa-check-circle"></i
+                  ></span>
+                  <span class="body-medium">Complete 24/7 Security</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Video Section Start -->
+        <section class="section video">
+          <div class="container">
+            <div class="video-card">
+              <button class="play-btn">
+                <span class="play-icon"><i class="fa fa-play"></i> </span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Story Section Start -->
+        <section class="section story">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <p class="section-subtitle">Our Customers</p>
+
+                <h2 class="section-title">We Help 1000+ Family Find Their Homes</h2>
+
+                <ul class="avatar-list">
+                  <li class="avatar">
+                    <img src="images/avatar 1.png" width="120" height="80" loading="lazy" class="img-cover"/>
+                  </li>
+
+                  <li class="avatar">
+                    <img src="images/avatar 2.png" width="120" height="80" loading="lazy" class="img-cover"/>
+                  </li>
+
+                  <li class="avatar">
+                    <img src="images/avatar 3.png" width="120" height="80" loading="lazy" class="img-cover"/>
+                  </li>
+
+                  <li class="avatar">
+                    <img src="images/avatar 4.png" width="120" height="80" loading="lazy" class="img-cover"/>
+                  </li>
+
+                  <div class="overplay-content">
+                    <span>99+</span>
+                  </div>
+                </ul>
+              </div>
+
+              <a href="#" class="btn btn-fill"><span>View All Stories</span></a>
+            </div>
+
+            <ul class="story-list">
+              <li class="story-card">
+                    <figure class="card-avatar">
+                      <img src="images/chris treger.jpg" width="556" height="556" loading="lazy" class="img-cover"/>
+                    </figure>
+                <div>
+                    <a href="#" class="overplay-content">
+                    <h3 class="overplay-heading">Chris Traegar</h3>
+
+                    <div class="rating-wrapper">
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+
+                      <data class="rating-text" value="5">5.0</data>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="story-card">
+                <figure class="card-avatar">
+                  <img src="images/duke silver.png" width="556" height="556" loading="lazy" clas/>
+                </figure>
+                <div>
+                    <a href="#" class="overplay-content">
+                    <h3 class="overplay-heading">Duke Silver</h3>
+
+                    <div class="rating-wrapper">
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+
+                      <data class="rating-text" value="5">5.0</data>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="story-card">
+               <figure class="card-avatar">
+                  <img src="images/tassuka aoi.jpg" width="556" height="556" loading="lazy" class="img-cover"
+                  />
+                </figure>
+                <div>
+                    <a href="#" class="overplay-content">
+                    <h3 class="overplay-heading">Tasukasa Aoi</h3>
+
+                    <div class="rating-wrapper">
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+
+                      <data class="rating-text" value="5">5.0</data>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="story-card">
+                <figure class="card-avatar">
+                  <img src="images/freida vernes.png" width="556" height="556" loading="lazy" class="img-cover"
+                  />
+                </figure>
+                <div>
+                    <a href="#" class="overplay-content">
+                    <h3 class="overplay-heading">Freida Varnes</h3>
+
+                    <div class="rating-wrapper">
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+
+                      <data class="rating-text" value="5">5.0</data>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="story-card">
+                <figure class="card-avatar">
+                  <img src="images/carl lorthner.jpg" width="156" height="256" loading="lazy" class="img-cover"
+                  />
+                </figure>
+                <div>
+                    <a href="#" class="overplay-content">
+                    <h3 class="overplay-heading">Carl Lorthner</h3>
+
+                    <div class="rating-wrapper">
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+
+                      <data class="rating-text" value="5">5.0</data>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="story-card">
+                <figure class="card-avatar">
+                  <img src="images/Marci Sentener.png" width="156" height="256" loading="lazy" class="img-cover"
+                  />
+                </figure>
+                <div>
+                    <a href="#" class="overplay-content">
+                    <h3 class="overplay-heading">Marci Sentner</h3>
+
+                    <div class="rating-wrapper">
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+                      <span class="star-icon"><i class="fa fa-star"></i></span>
+
+                      <data class="rating-text" value="5">5.0</data>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul> 
+          </div>
+        </section>
+
+      </article>
+    </main>
+    
+    <!-- footer Section Start -->
+        <footer class="footer">
+          <div class="footer-top">
+
+            <div class="container">
+              <div class="footer-brand">
+                <a href="#" class="logo">
+                  <h2 style="font-size: 3rem;"><i class="fa fa-home"></i> WealthHome</h2>
+                </a>
+
+                <p class="footer-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, assumenda deserunt? 
+                  Cupiditate,bettrt.
+                </p>
+              </div>
+
+              <nav class="footer-nav">
+              <p class="footer-list-title" id="nav-label-1">Quick Link</p> 
+
+              <ul class="footer-list">
+              <li><a href="#Home" class="footer-link">Home</a></li>
+              <li><a href="#Buy" class="footer-link">Buy</a></li>
+              <li><a href="#Sell" class="footer-link">Sell</a></li>
+              <li><a href="#Rent" class="footer-link">Rent</a></li>
+              </ul>
+              </nav>
+
+              <nav class="footer-nav">
+                <p class="footer-list-title" id="nav-label-2">Support</p> 
+    
+                <ul class="footer-list">
+                <li><a href="#about" class="footer-link">About Us</a></li>
+                <li><a href="" class="footer-link">Contact Us</a></li>
+                <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                <li><a href="#" class="footer-link">Terms & Conditions </a></li>
+                </ul>
+              </nav>
+
+              <nav class="footer-nav">
+                <p class="footer-list-title" id="nav-label-3">Get in touch</p> 
+    
+                <ul class="footer-list">
+                <li><a href="#" class="footer-link">hello@wealthome.com</a></li>
+                <address><a href="#" class="address">4123 Perker Rd. New Delhi, India 321341</a></address>
+              
+                <li>
+                  <ul class="social-list">
+                  <li class="social-link"><i class="fa fa-facebook-square"></i></li>
+                    <li class="social-link"><i class="fa fa-instagram"></i></li>
+                    <li class="social-link"><i class="fa fa-twitter-square"></i></li>
+                  </ul>
+                </li>
+                </ul>
+              </nav>
+
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="container">
+              <p class="copyright">
+                Copyright 2024 CodeWithAkshit 
+              </p>
+            </div>
+          </div>
+        </footer>
+    <!-- Javascript here -->
+    <script src="WealthHome.js"></script>
+  </body> 
